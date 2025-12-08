@@ -1,0 +1,22 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+<body>
+    <br>
+    <div class="registerform">
+        <h3>Rolsa Technologies Registration</h3>
+        <hr>
+        <br>
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+            <button type="submit" class="regbtn">Create Account</button>
+        </form>
+        <br>
+        <div>
+            <p>Already have an account? Login</p> <a href="{% url '' %}">here</a>
+        </div>
+    </div>
+</body>
+{% endblock %}

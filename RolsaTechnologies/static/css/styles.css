@@ -1,0 +1,35 @@
+.homebar {
+    height: 9vh;
+    background-color: #EDF6D8;
+    transform:translateY(0px)
+}
+
+.navbar {
+    height: 100px;
+    background-color: #EDF6D8;
+}
+
+.logo {
+    height: 8vh;
+    transform:translateY(-655px);
+}
+
+.Banner {
+    width: 100vw;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    transform:translateY(0px)
+}
+
+.registerform {
+    width: 50vw;
+    border-radius: 45px;
+    color: white;
+    background-color: #B1EBC4;
+}
+
+.regbtn {
+    text-align: center;
+    border-radius: 90px;
+    background-color: #C1F2D3;
+}

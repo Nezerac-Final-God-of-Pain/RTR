@@ -1,0 +1,12 @@
+{% load static %}
+
+<nav class="navbar">
+    <a class="navbarHeading" href="{% url '' %}">  
+      &nbsp;
+    <img src="{% static 'logo.png' %}" class="logo" alt="logo">
+    </a>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'register' %}">Register</a>
+    </li>
+
+</nav>
