@@ -1,22 +1,27 @@
 {% extends 'website/base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
 
 {% block content %}
-<body>
     <br>
-    <div class="registerform">
-        <h3>Rolsa Technologies Registration</h3>
+    <div class="registerform container p-5 my-4">
+        <h3 class="formtitle">Rolsa Technologies Registration</h3>
         <hr>
         <br>
         <form method="POST" autocomplete="off">
             {% csrf_token %}
-            {{form.as_p}}
+            {{form|crispy}}
             <br>
             <button type="submit" class="regbtn">Create Account</button>
         </form>
         <br>
         <div>
-            <p>Already have an account? Login</p> <a href="{% url '' %}">here</a>
+            <p>Already have an account? Login</p> <a href="{% url 'login' %}">here</a>
         </div>
     </div>
-</body>
+
+</div>
+{% include "components/footer.html" %}
+
 {% endblock %}

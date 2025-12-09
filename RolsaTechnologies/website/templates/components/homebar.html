@@ -1,12 +1,15 @@
 {% load static %}
 
 <nav class="homebar">
-    <a class="navbarHeading" href="{% url '' %}">  
-      &nbsp;
-    <img src="{% static 'logo.png' %}" class="logo" alt="logo">
+    <a class="userpic navbar-brand" href="{% url 'user-dashboard' %}">
+       <img src="{% static 'userprofile.jpg' %}" class="userprofilepic" alt="userprofilepic">
     </a>
     <li class="nav-item">
       <a class="nav-link" href="{% url 'register' %}">Register</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'login' %}">Login</a>
+    </li>
+
 
 </nav>

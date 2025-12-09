@@ -1,2 +1,6 @@
-django
-django-crispy-forms
+asgiref==3.11.0
+crispy-bootstrap5==2025.6
+Django==5.2.9
+django-crispy-forms==2.5
+sqlparse==0.5.4
+tzdata==2025.2
